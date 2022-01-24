@@ -36,11 +36,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bambuschop/eslint-plugin-jira-ticket-todo-comment"
+    "url": "https://github.com/bamboechop/eslint-plugin-jira-ticket-todo-comment"
   },
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
