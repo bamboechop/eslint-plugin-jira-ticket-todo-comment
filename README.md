@@ -26,7 +26,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "jira-ticket-todo-comment/rule-name": "error"
+        "jira-ticket-todo-comment/jira-ticket-todo-comment": "error"
     }
 }
 ```
@@ -43,7 +43,7 @@ This rule has an optional object option.
 ```json
 {
     "rules": {
-        "jira-ticket-todo-comment/rule-name": ["error", { "projectKey":  "TP" }]
+        "jira-ticket-todo-comment/jira-ticket-todo-comment": ["error", { "projectKey":  "TP" }]
     }
 }
 ```
@@ -51,7 +51,7 @@ This rule has an optional object option.
 ```json
 {
     "rules": {
-        "jira-ticket-todo-comment/rule-name": ["error", { "regex":  "^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*" }]
+        "jira-ticket-todo-comment/jira-ticket-todo-comment": ["error", { "regex":  "^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*" }]
     }
 }
 ```
