@@ -1,0 +1,13 @@
+# Changelog
+
+## 1.0.2
+* chore(#9): remove dependency `requireindex`
+* chore: updated dependencies to fix 2 moderate vulnerabilities
+* chore: added `CHANGELOG.md` file
+
+## 1.0.1
+* fix(#7): fixed wrong link in package.json repository.url
+* fix(#7): fixed wrong link in lib/rules/jira-ticket-todo-comment.js
+
+## 1.0.0
+* 🎉🎉 First release of eslint-plugin-jira-ticket-todo-comment

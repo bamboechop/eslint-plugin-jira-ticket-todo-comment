@@ -1,9 +1,6 @@
 {
   "author": "bamboechop <npmjs@bamboechop.at>",
   "description": "Checks TODO comments and informs about missing Jira ticket mentions",
-  "dependencies": {
-    "requireindex": "^1.2.0"
-  },
   "devDependencies": {
     "eslint": "^8.0.1",
     "eslint-plugin-eslint-plugin": "^4.0.1",
@@ -42,5 +39,5 @@
     "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
