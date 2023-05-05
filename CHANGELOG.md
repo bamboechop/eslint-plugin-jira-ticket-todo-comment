@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.3
+* feat: make regex case-insensitive to catch `TODO`, `todo`, `Todo`, `ToDo` and any other combination
+
 ## 1.0.2
 * chore(#9): remove dependency `requireindex`
 * chore: updated dependencies to fix 2 moderate vulnerabilities

@@ -33,5 +33,17 @@ ruleTester.run(`JIRA ticket TODO comment test`, rule , {
       code: `// TODO T_P-123 fix this`,
       options: [{ regex: `^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*` }],
     },
+    {
+      code: `// Todo T_P-123 fix this`,
+      options: [{ regex: `^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*` }],
+    },
+    {
+      code: `// ToDo T_P-123 fix this`,
+      options: [{ regex: `^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*` }],
+    },
+    {
+      code: `// todo T_P-123 fix this`,
+      options: [{ regex: `^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*` }],
+    },
   ],
 });
