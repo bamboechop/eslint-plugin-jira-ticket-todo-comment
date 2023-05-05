@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.4
+* fix: hardcoded `TODO` check
+
 ## 1.0.3
 * feat: make regex case-insensitive to catch `TODO`, `todo`, `Todo`, `ToDo` and any other combination
 
