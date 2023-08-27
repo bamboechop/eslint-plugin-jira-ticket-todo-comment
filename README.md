@@ -55,3 +55,11 @@ This rule has an optional object option.
     }
 }
 ```
+* `"message": "Please replace this TODO with a JIRA reference."` allows you to override the default message that appears when a TODO is detected without any JIRA key.
+```json
+{
+    "rules": {
+        "jira-ticket-todo-comment/jira-ticket-todo-comment": ["error", { "message":  "Please replace this TODO with a JIRA reference." }]
+    }
+}
+```
