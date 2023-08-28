@@ -30,6 +30,10 @@ ruleTester.run(`JIRA ticket TODO comment test`, rule , {
       options: [{ projectKey: `TP` }],
     },
     {
+      code: `// TODO TP-123 fix this`,
+      options: [{ projectKey: `TP`, message: "Please replace this TODO with a JIRA reference." }],
+    },
+    {
       code: `// TODO T_P-123 fix this`,
       options: [{ regex: `^TODO\\s[A-Z]_[A-Z]{1,9}-\\d+\\s?.*` }],
     },
