@@ -1,14 +1,16 @@
 {
   "author": "bamboechop <npmjs@bamboechop.at>",
-  "description": "Checks TODO comments and informs about missing Jira ticket mentions",
+  "description": "Checks TODO comments and informs about missing Jira (or other issue tracking system) ticket mentions",
   "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-plugin-eslint-plugin": "^5.0.8",
-    "eslint-plugin-node": "^11.1.0",
-    "mocha": "^10.2.0"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-eslint-plugin": "^7.3.2",
+    "eslint-plugin-n": "^17.24.0",
+    "globals": "^17.5.0",
+    "mocha": "^11.7.5"
   },
   "engines": {
-    "node": "12.x || 14.x || >= 16 || >= 18"
+    "node": "12.x || 14.x || >= 16"
   },
   "keywords": [
     "eslint",
@@ -23,7 +25,14 @@
     "jira-ticket-todo-comment",
     "todo",
     "todocomment",
-    "todo-comment"
+    "todo-comment",
+    "linear",
+    "linearticket",
+    "linear-ticket",
+    "linearticketcomment",
+    "linear-ticket-comment",
+    "lineartickettodocomment",
+    "linear-ticket-todo-comment"
   ],
   "license": "ISC",
   "main": "lib/index.js",
@@ -37,7 +46,14 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "test:compat": "npm run test:compat:eslint6 && npm run test:compat:eslint10",
+    "test:compat:eslint6": "npm exec --yes --package eslint@6.8.0 -- node scripts/eslint-compat-smoke.js 6.8.0",
+    "test:compat:eslint10": "npm exec --yes --package eslint@10.2.1 -- node scripts/eslint-compat-smoke.js 10.2.1"
   },
-  "version": "1.0.5"
+  "overrides": {
+    "diff": "^8.0.3",
+    "serialize-javascript": "^7.0.5"
+  },
+  "version": "1.0.6"
 }

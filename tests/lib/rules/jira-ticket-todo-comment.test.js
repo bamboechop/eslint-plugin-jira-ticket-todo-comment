@@ -4,15 +4,15 @@ const RuleTester = require('eslint').RuleTester;
 /* eslint-enable quotes */
 
 const ruleTester = new RuleTester();
-ruleTester.run(`JIRA ticket TODO comment test`, rule , {
+ruleTester.run(`Jira ticket TODO comment test`, rule , {
   invalid: [
     {
       code: `// TODO fix this`,
-      errors: [{ message: `Add a JIRA ticket number to the TODO comment (e.g. MP-123)` }],
+      errors: [{ message: `Add a Jira ticket number to the TODO comment (e.g. MP-123)` }],
     },
     {
       code: `// TODO MP-123 fix this`,
-      errors: [{ message: `Add a JIRA ticket number to the TODO comment (e.g. TP-123)` }],
+      errors: [{ message: `Add a Jira ticket number to the TODO comment (e.g. TP-123)` }],
       options: [{ projectKey: `TP` }],
     },
     {
@@ -31,7 +31,7 @@ ruleTester.run(`JIRA ticket TODO comment test`, rule , {
     },
     {
       code: `// TODO TP-123 fix this`,
-      options: [{ projectKey: `TP`, message: "Please replace this TODO with a JIRA reference." }],
+      options: [{ projectKey: `TP`, message: `Please replace this TODO with a Jira reference.` }],
     },
     {
       code: `// TODO T_P-123 fix this`,
