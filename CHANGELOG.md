@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+* fix: support ESLint 10
+* chore: update repository lint and test tooling to ESLint 10
+
 ## 1.0.5
 * feat: Add a message option to override the default warning message [#11](https://github.com/bamboechop/eslint-plugin-jira-ticket-todo-comment/pull/11)
 
